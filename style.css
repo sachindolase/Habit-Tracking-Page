@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav #menu {
+    display: none;
+}
+
+nav #menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav #menu button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.form {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#habitTracker {
+    display: none;
+}
+
+#habits {
+    margin-top: 20px;
+}
+
+.habit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.habit.checked {
+    background-color: #d4edda;
+}
+
+.habit.missed {
+    background-color: #f8d7da;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 0.8em;
+    }
+
+    nav #menuButton {
+        font-size: 1em;
+    }
+
+    nav #menu button {
+        padding: 5px;
+    }
+}
+

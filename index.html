@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <button id="menuButton">Menu</button>
+            <div id="menu">
+                <button id="loginButton">Login</button>
+                <button id="registerButton">Register</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="loginForm" class="form">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginSubmit">Submit</button>
+        </div>
+
+        <div id="registerForm" class="form">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" placeholder="Username">
+            <input type="password" id="registerPassword" placeholder="Password">
+            <button id="registerSubmit">Submit</button>
+        </div>
+
+        <div id="habitTracker">
+            <h2>Add New Habit</h2>
+            <input type="text" id="habitName" placeholder="Habit Name">
+            <button id="addHabit">Add Habit</button>
+            <div id="habits"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
